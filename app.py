@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
 from alpha_vantage.timeseries import TimeSeries
-import matplotlib.pyplot as plt
 import altair as alt
 import plotly.express as px
 import requests
