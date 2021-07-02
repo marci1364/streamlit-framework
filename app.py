@@ -28,7 +28,6 @@ Month = st.selectbox('Month:', options =
 def load_data(Tic, YEAR, MONTH):
     load_dotenv()
     api_key = os.environ.get('api_key')
-    #api_key = '7BVCOMX48DYGXDOY'
     ts = TimeSeries(key=api_key, output_format='pandas')
     data, meta_dats = ts.get_daily(Tic, outputsize = 'full')
     month_dict = {}
